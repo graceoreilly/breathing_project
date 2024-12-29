@@ -1,0 +1,15 @@
+{
+  "name": "breathing_project",
+  "version": "1.0.0",
+  "description": "### **Project Overview** The Breathing Techniques API is a RESTful API designed to promote wellness and mindfulness by providing users with information about various breathing techniques. Each technique in the dataset includes its description, contraindications, ideal practice times, and recommended poses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
