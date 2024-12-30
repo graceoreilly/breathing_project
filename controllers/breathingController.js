@@ -1,4 +1,4 @@
-// import data from "../breathingDataset.json" assert { type: "json" };
+// import data from "../breathingDataset.json" assert { type: "json" }; //this should work so unsure why it has not? if this does not work, need the code below
 
 import fs from "fs"; // importing File system module
 import path from "path"; // importing path module - helps manage and work with file paths
@@ -13,6 +13,7 @@ const data = JSON.parse(fs.readFileSync(filePath, "utf8")); //Reads the file and
 
 //the code for the functions for each request will go here
 
+// 1. Function to get all breathing techniques
 export async function getAllTechniques() {
     return [...data];
 }

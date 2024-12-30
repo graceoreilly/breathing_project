@@ -49,6 +49,11 @@ In the future, the API will integrate with a frontend application, offering a mo
 
 ---
 
+### **Response Specification**
+JSON responses from this API should adhere to the JSend specification as laid out in this documentation: https://github.com/omniti-labs/jsend
+
+---
+
 ### **Future Goals**
 1. **Frontend Integration**:
    - Build a user-friendly interface to interact with the API.
