@@ -45,7 +45,7 @@ router.post("/", async function (req,res) {
     data: returnedData,
   };
   //respond to the client with the newly created breathing technique and status 201
-  res.json(newTechnique);
+  res.status(201).json(newTechnique);
 })
 
 

@@ -13,12 +13,12 @@ const filePath = path.join(__dirname, "./libs/breathingDataset.json");
 const data = JSON.parse(fs.readFileSync(filePath, "utf8")); //Reads the file and returns the content as a string //data stores the parsed JSON object or array, which can now be worked with
 
 //required when adding new techniques, initialises to ensure a new id is added when a new technique is added
-let techniqueId = 0; // Start with an initial ID of 0
-let techniques = data.map((technique) => ({ ...technique, id: ++techniqueId })); // Assign IDs to all techniques
+let techniqueId = 1; // Start with an initial ID of 1
+let techniques = data.map((technique) => ({ ...technique, id: techniqueId++ })); // Assign IDs to all techniques
 
 // 1. Function to get all breathing techniques
 export async function getAllTechniques() {
-  return [...data];
+  return [...techniques];
 }
 
 // 2. Function to get a single breathing technique
