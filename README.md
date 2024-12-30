@@ -39,13 +39,13 @@ In the future, the API will integrate with a frontend application, offering a mo
 ---
 
 ### **Endpoints**
-| Method | Endpoint                 | Description                                              |
-|--------|--------------------------|----------------------------------------------------------|
-| GET    | `/techniques`            | Retrieves a list of all breathing techniques.            |
-| GET    | `/techniques/:id`        | Retrieves details of a specific technique by ID.         |
-| POST   | `/techniques`            | Adds a new breathing technique to the dataset.           |
-| PUT    | `/techniques/:id`        | Updates an existing technique by ID.                     |
-| DELETE | `/techniques/:id`        | Deletes a specific technique by ID.                      |
+| Method | Endpoint                 | Description                                              | Status Code |
+|--------|--------------------------|----------------------------------------------------------|-------------|
+| GET    | `/techniques`            | Retrieves a list of all breathing techniques.            | 200         |
+| GET    | `/techniques/:id`        | Retrieves details of a specific technique by ID.         | 200         |
+| POST   | `/techniques`            | Adds a new breathing technique to the dataset.           | 201         |
+| PUT    | `/techniques/:id`        | Updates an existing technique by ID.                     | 200         |
+| DELETE | `/techniques/:id`        | Deletes a specific technique by ID.                      | 200         |
 
 ---
 
