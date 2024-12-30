@@ -1,5 +1,5 @@
 [{
-  "Id" : 1,
+  "id" : 1,
   "Breathing Technique" : "Nadi Shodhana Pranayama (Alternate Nostril Breathing)",
   "Description" : "Sit in a comfortable position. Close your right nostril with your thumb, inhale through your left nostril. Close your left nostril with your ring finger, release your thumb from the right nostril, and exhale through the right nostril. Inhale through the right nostril, close it, and exhale through the left. Continue this alternate pattern.",
   "Contraindications" : "Avoid if you have severe nasal congestion or a respiratory condition that makes breathing difficult.",
@@ -7,7 +7,7 @@
   "Best Pose" : "Easy Pose (Sukhasana)"
 },
 {
-  "Id" : 2,
+  "id" : 2,
   "Breathing Technique" : "Chandrabhedana Pranayama (Left Nostril Breathing)",
   "Description" : "Sit comfortably. Close your right nostril with your thumb and inhale deeply through your left nostril. Close your left nostril and exhale through the right nostril. Repeat this cycle.",
   "Contraindications" : "Avoid if you feel cold, lethargic, or are prone to sinus issues.",
@@ -15,7 +15,7 @@
   "Best Pose" : "Easy Pose (Sukhasana)"
 },
 {
-  "Id" : 3,
+  "id" : 3,
   "Breathing Technique" : "Surya Bhedana Pranayama (Right Nostril Breathing)",
   "Description" : "Close your left nostril with your ring finger and inhale deeply through your right nostril. Close your right nostril and exhale through the left nostril. Repeat this pattern.",
   "Contraindications" : "Avoid if you are feeling hot, anxious, or suffer from hypertension.",
@@ -23,7 +23,7 @@
   "Best Pose" : "Vajrasana (Thunderbolt Pose)"
 },
 {
-  "Id" : 4,
+  "id" : 4,
   "Breathing Technique" : "Full Yogic Breath",
   "Description" : "Lie down or sit in a comfortable position. Inhale deeply, first filling the belly, then the rib cage, and finally the chest. Exhale in reverse order, releasing the chest, rib cage, and then the belly. Ensure the breath is smooth and even.",
   "Contraindications" : "None, but those with severe respiratory issues should proceed gently.",
@@ -31,7 +31,7 @@
   "Best Pose" : "Corpse Pose (Savasana) or Easy Pose (Sukhasana)"
 },
 {
-  "Id" : 5,
+  "id" : 5,
   "Breathing Technique" : "Bhastrika Pranayama (Bellows Breath)",
   "Description" : "Sit in a comfortable position. Inhale deeply through the nose and exhale forcefully through the nose, keeping the breath rapid and rhythmic. Continue for 10-15 breaths and then take a deep inhale and slow exhale.",
   "Contraindications" : "Avoid if you have high blood pressure, heart problems, or are pregnant.",
@@ -39,7 +39,7 @@
   "Best Pose" : "Lotus Pose (Padmasana)"
 },
 {
-  "Id" : 6,
+  "id" : 6,
   "Breathing Technique" : "Bhramari Pranayama (Bee Breath)",
   "Description" : "Sit in a quiet space. Inhale deeply, then exhale slowly while making a humming sound, like a bee. Focus on the vibration and sound.",
   "Contraindications" : "None, but avoid in noisy environments for better effect.",
@@ -47,7 +47,7 @@
   "Best Pose" : "Easy Pose (Sukhasana) or Thunderbolt Pose (Vajrasana)"
 },
 {
-  "Id" : 7,
+  "id" : 7,
   "Breathing Technique" : "Kapalbhati Pranayama (Skull Shining Breath)",
   "Description" : "Sit in a comfortable position. Take a deep breath in, then exhale forcefully through the nose while pulling the belly inward. Allow the inhale to be passive. Repeat this rapid exhalation for 20-30 rounds.",
   "Contraindications" : "Avoid if you have respiratory issues, high blood pressure, or are pregnant.",
