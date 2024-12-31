@@ -5,6 +5,7 @@ import {
   getTechniqueByID,
   addNewTechnique,
   updateTechniquebyID,
+  deleteTechnique,
 } from "../controllers/breathingController.js";
 
 // Routes
@@ -64,6 +65,21 @@ router.put("/:id", async function (req,res) {
   };
   //respond to client
   res.json(updatedTechnique);
+})
+
+//5. DELETE request to delete a breathing technique
+router.delete("/:id", async function (req,res) {
+  //let client know id is req in params to be deleted
+  const techniqueID = Number(req.params.id);
+  //update the array to delete the technique
+  let returnedData = await deleteTechnique(techniqueID);
+  //return the deleted technique following res spec
+  const deletedTechnique = {
+    success: true,
+    data: returnedData,
+  };
+  //respond to client
+  res.json(deletedTechnique);
 })
 
 export default router; //exports the router object
