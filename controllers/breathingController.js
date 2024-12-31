@@ -58,10 +58,19 @@ export async function updateTechniquebyID (id, updates) {
   //find the index of the technique with the selected id
   const index = findTechniqueIndexById(id);
 //use the technique found at this index and merge the updates to a new variable with the same id
+ // If the technique is not found, return null
+ if (index === -1) {
+  return null;
+};
 const oldTechnique = techniques[index];
 const updated = {...oldTechnique, ...updates, id}
 //use slice to update the technique to update the existing array
-techniques = [...techniques.slice(0, index), updated, ...techniques.slice(index + 1)];
+ // Update the array using slice
+ techniques = [
+  ...techniques.slice(0, index),
+  updated,
+  ...techniques.slice(index + 1),
+];
 //return the updated technique
 return updated;
 }
