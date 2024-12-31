@@ -65,3 +65,15 @@ techniques = [...techniques.slice(0, index), updated, ...techniques.slice(index 
 //return the updated technique
 return updated;
 }
+
+//5. Function to delete a breathing technique
+//create async function to deleteTechnique()
+export async function deleteTechnique(id) {
+  //find the index in the array of the technique to delete
+  const index = findTechniqueIndexById(id);
+  const deleted = techniques[index];
+  //use slice to delete the technique from the array
+  techniques = [...techniques.slice(0, index), ...techniques.slice(index + 1)];
+  //return the deleted technique
+  return deleted;
+}
