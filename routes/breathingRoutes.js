@@ -4,6 +4,7 @@ import {
   getAllTechniques,
   getTechniqueByID,
   addNewTechnique,
+  updateTechniquebyID,
 } from "../controllers/breathingController.js";
 
 // Routes
@@ -48,5 +49,21 @@ router.post("/", async function (req,res) {
   res.status(201).json(newTechnique);
 })
 
+//4. PUT request to update a breathing technique
+router.put("/:id", async function (req,res) {
+  //specify an id is required in URI
+  const techniqueID = Number(req.params.id);
+  //specify a body is required for the update
+  const techniqueUpdates = req.body;
+  //update the breathing technique by id and let the client know a body is required
+  let returnedData = await updateTechniquebyID(techniqueID, techniqueUpdates);
+  //return the updated technique following res spec
+  const updatedTechnique = {
+    success: true,
+    data: returnedData,
+  };
+  //respond to client
+  res.json(updatedTechnique);
+})
 
 export default router; //exports the router object

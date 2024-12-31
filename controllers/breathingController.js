@@ -44,3 +44,24 @@ export async function addNewTechnique(newTechnique) {
     //return the newly created technique
     return created;
 }
+
+// Function to find technique index by id
+function findTechniqueIndexById(id) {
+  // Return the index of the technique in the array based on the id
+  return techniques.findIndex(technique => technique.id === id);
+}
+
+
+// 4. Function to update a breathing technique
+//create an async function to updateTechniquebyID - take in two parameters id and updates
+export async function updateTechniquebyID (id, updates) {
+  //find the index of the technique with the selected id
+  const index = findTechniqueIndexById(id);
+//use the technique found at this index and merge the updates to a new variable with the same id
+const oldTechnique = techniques[index];
+const updated = {...oldTechnique, ...updates, id}
+//use slice to update the technique to update the existing array
+techniques = [...techniques.slice(0, index), updated, ...techniques.slice(index + 1)];
+//return the updated technique
+return updated;
+}
