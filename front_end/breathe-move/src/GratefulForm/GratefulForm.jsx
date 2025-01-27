@@ -5,10 +5,13 @@ const [items, setItems] = useState([]); //state to store the list of what I'm gr
 
     const handleSubmit = (event) => {
         event.preventDefault();
-    
-const formData = new FormData(event.target);
-const inputValue = formData.get('inputName');
-// sendInputValueToApi(inputValue).then(() => /* Do something */ - To implement at a later stage
+
+        //Commented out code, to use when connecting an API
+// const formData = new FormData(event.target);
+// const inputValue = formData.get('inputName');
+// // sendInputValueToApi(inputValue).then(() => /* Do something */ 
+
+const inputValue = event.target.elements.inputName.value;
 if(inputValue.trim()) {
     setItems((prevItems) => [...prevItems, inputValue]) //add the new items to the list
 }
