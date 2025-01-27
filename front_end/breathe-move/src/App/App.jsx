@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 //import YogaCardHolder from '../YogaCardHolder/YogaCardHolder'
 import InspirationalQuotesCard from '../InspirationalQuotesCard/InspirationalQuotesCard'
+import GratefulForm from '../GratefulForm/GratefulForm'
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
     <>
     <Header />
     <InspirationalQuotesCard />
+    <GratefulForm />
     {/* //<YogaCardHolder /> */}
     <Footer />
     </>

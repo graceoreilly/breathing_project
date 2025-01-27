@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const API_ENDPOINT = 'https://api.allorigins.win/get?url=https://zenquotes.io/api/quotes';
 
@@ -33,6 +33,6 @@ function InspirationalQuotesCard() {
             )}
         </button>
     );
-}–
+}
 
 export default InspirationalQuotesCard;
