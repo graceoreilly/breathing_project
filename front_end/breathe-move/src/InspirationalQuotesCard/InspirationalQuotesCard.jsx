@@ -3,7 +3,6 @@ import { useState } from 'react';
 const API_ENDPOINT = 'https://api.allorigins.win/get?url=https://zenquotes.io/api/quotes';
 
 function InspirationalQuotesCard() {
-    const [data, setData] = useState(null);
     const [quote, setQuote] = useState(null);
 
     async function handleClick() {
@@ -11,7 +10,6 @@ function InspirationalQuotesCard() {
             const response = await fetch(API_ENDPOINT);
             const json = await response.json();
             const quotes = JSON.parse(json.contents);
-            setData(quotes); //updating the data state variable with the entire fetched quotes array
             //Ensure that a random quote is selected from the quotes array
             let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
             if (quote && randomQuote.q === quote.q) {
