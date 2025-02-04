@@ -1,21 +1,21 @@
 import './App.css'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
-//import YogaCardHolder from '../YogaCardHolder/YogaCardHolder'
-import InspirationalQuotesCard from '../InspirationalQuotesCard/InspirationalQuotesCard'
-import GratefulForm from '../GratefulForm/GratefulForm'
+import Homepage from '../Pages/MainPage/MainPage'
+import NavBar from '../NavBar/NavBar';
+//import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-    <Header />
-    <InspirationalQuotesCard />
-    <GratefulForm />
-    {/* //<YogaCardHolder /> */}
-    <Footer />
+    <NavBar />
+    <Homepage />
+    <div className="container">
+      {/* <Routes>
+    <Route path="/" element={<Homepage />} />
+    </Routes> */}
+    </div>
     </>
-  )
+  );
 }
 
 export default App

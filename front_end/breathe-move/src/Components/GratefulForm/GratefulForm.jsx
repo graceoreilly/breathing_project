@@ -20,6 +20,7 @@ event.target.reset(); //rests the form input
     return (
     <>
     <form onSubmit={handleSubmit}>
+    <p>What are you grateful for today?</p>
     <input type="text" name="inputName" />
     <button type="Submit">Add</button>
     </form>
