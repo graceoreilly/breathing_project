@@ -1,6 +1,7 @@
 import './App.css'
 import Homepage from '../Pages/MainPage/MainPage'
 import NavBar from '../NavBar/NavBar';
+import './App.css'
 //import { Route, Routes } from 'react-router-dom'
 
 function App() {
