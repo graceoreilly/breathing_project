@@ -1,0 +1,13 @@
+/* .hero {
+    width: 97%;
+    max-height: 800px;
+    border-radius: 20px;
+} */
+
+.container {
+    background-image: url(./Images/hero-image.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

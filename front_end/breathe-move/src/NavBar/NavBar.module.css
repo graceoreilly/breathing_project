@@ -1,0 +1,41 @@
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #283618;
+    color: #fefae0;
+    margin: 0;
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.navBar {
+    margin-left: auto;
+}
+
+.navContainer {
+    display: flex;
+    text-align: right;
+    margin: 20px;
+}
+
+.navContainer > li {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+
+@media all and (max-width: 600px) {
+    .navContainer {
+        flex-wrap: wrap;
+    }
+    .navContainer > li {
+        flex: 1 1 50%;
+    }
+}
