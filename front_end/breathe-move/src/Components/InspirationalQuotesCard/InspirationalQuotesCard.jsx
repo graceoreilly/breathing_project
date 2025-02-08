@@ -29,7 +29,7 @@ function InspirationalQuotesCard({className}) {
             <h2 className={styles.heading}>Need some inspiration?</h2>
             {/* //if quote is not null, display the quote and author */}
             {quote && (
-                <p>{quote.q} <p>Author:</p> {quote.a}</p>
+                <p>{quote.q} <p></p> {quote.a}</p>
             )}
         </button>
     );

@@ -1,4 +1,6 @@
-import { useState } from 'React';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
+import styles from '../GratefulForm/GratefulForm.module.css'
 
 function GratefulForm ({className}) {
 const [items, setItems] = useState([]); //state to store the list of what I'm grateful for items
@@ -19,17 +21,19 @@ event.target.reset(); //rests the form input
     };
     return (
     <>
+    <div className={styles.container}>
     <form onSubmit={handleSubmit} className={className}>
     <p>What are you grateful for today?</p>
-    <input type="text" name="inputName" />
-    <button type="Submit">Add</button>
+    <input type="text" name="inputName" className={styles.input} />
+    <button type="Submit" className={styles.submit}>Add</button>
     </form>
 
-    <ul>
+    <ul className={styles.output}>
         {items.map((item, index) => (
             <li key={index}>{item}</li> //displays the items in a list
         ))}
     </ul>
+    </div>
     </>)
 }
 
