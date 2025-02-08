@@ -1,6 +1,6 @@
 import { useState } from 'React';
 
-function GratefulForm () {
+function GratefulForm ({className}) {
 const [items, setItems] = useState([]); //state to store the list of what I'm grateful for items
 
     const handleSubmit = (event) => {
@@ -19,7 +19,7 @@ event.target.reset(); //rests the form input
     };
     return (
     <>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={className}>
     <p>What are you grateful for today?</p>
     <input type="text" name="inputName" />
     <button type="Submit">Add</button>

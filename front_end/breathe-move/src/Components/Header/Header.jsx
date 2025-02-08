@@ -1,15 +1,18 @@
-import hero from '/Images/hero-image.jpg';
-import styles from "../Header/Header.module.css"
+import styles from "../Header/Header.module.css";
+import Button from '../../Components/Button/Button.jsx';
 
 function Header() {
-return (
+  return (
     <>
-    <div className={styles.container}>
-{/* <img src={hero} alt="a person sitting on a rock with knees crossed" className={styles.hero} /> */}
-<h2>Breathe and Move</h2>
-</div>
-</>
-)
+      <div className={styles.container}>
+        <h1 className={styles.heading}>Breathe. Move. Repeat.</h1>
+        <div className={styles.buttonContainer}>
+        <Button buttonText="Breathwork" />
+        <Button buttonText="Build a yoga flow" />
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Header;

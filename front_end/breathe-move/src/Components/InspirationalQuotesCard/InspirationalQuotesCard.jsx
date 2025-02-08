@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import styles from "../../Components/InspirationalQuotesCard/InspirationalQuotesCard.module.css"
+
 
 const API_ENDPOINT = 'https://api.allorigins.win/get?url=https://zenquotes.io/api/quotes';
 
-function InspirationalQuotesCard() {
+function InspirationalQuotesCard({className}) {
     const [quote, setQuote] = useState(null);
 
     async function handleClick() {
@@ -23,8 +25,8 @@ function InspirationalQuotesCard() {
     }
 
     return (
-        <button className="quotes-card-holder" onClick={handleClick}>
-            <h2>Click for an inspirational Quote</h2>
+        <button onClick={handleClick} className={className}>
+            <h2 className={styles.heading}>Need some inspiration?</h2>
             {/* //if quote is not null, display the quote and author */}
             {quote && (
                 <p>{quote.q} <p>Author:</p> {quote.a}</p>

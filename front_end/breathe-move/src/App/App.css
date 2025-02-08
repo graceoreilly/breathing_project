@@ -9,11 +9,11 @@ body {
     text-align: center;
 }
 
-header {
+/* header {
     background-color: #4CAF50;
     color: white;
     padding: 1rem;
-}
+} */
 
 footer {
     background-color: #4CAF50;
@@ -26,16 +26,16 @@ footer p {
     margin: 0; /* Ensure no extra margin */
 }
 
-main {
+/* main {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-}
+} */
 
-form {
+/* form {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
@@ -43,14 +43,14 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
-input {
+/* input {
     margin: 0.5rem 0;
     padding: 0.5rem;
     width: 100%;
     max-width: 300px;
-}
+} */
 
 /* nav {
     text-align: right;
@@ -65,25 +65,3 @@ nav li {
     display: inline;
     margin-right: 1rem;
 } */
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-button:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
