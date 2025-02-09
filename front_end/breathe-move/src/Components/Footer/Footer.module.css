@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #283618;
+    color: #fefae0;
+    margin: 0;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.githubLogo {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.githubLogo:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
