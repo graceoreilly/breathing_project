@@ -21,9 +21,9 @@ event.target.reset(); //rests the form input
     };
     return (
     <>
-    <div className={styles.container}>
-    <form onSubmit={handleSubmit} className={className}>
-    <p>What are you grateful for today?</p>
+    <div className={className}>
+    <form onSubmit={handleSubmit} className={styles.form}>
+    <h2 className={styles.question}>What are you grateful for today?</h2>
     <input type="text" name="inputName" className={styles.input} />
     <button type="Submit" className={styles.submit}>Add</button>
     </form>

@@ -9,10 +9,12 @@ function CardsContainer() {
         <>
         <div className={styles.container}>
         <InspirationalQuotesCard className={styles.quotesCard}/>
-        <GratefulForm className={styles.gratefulForm} />
+        <div className={styles.card}><GratefulForm className={styles.gratefulForm} /></div>
         </div>
         </>
     )
 }
+
+
 
 export default CardsContainer;
