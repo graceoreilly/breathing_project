@@ -1,5 +1,5 @@
 import Footer from '../../Components/Footer/Footer.jsx'
-import Header from '../../Components/Header/Header'
+import Header from '../../Components/Header/Header.jsx'
 import CardsContainer from '../../Components/CardsContainer/CardsContainer.jsx'
 //import { Route, Routes } from 'react-router-dom'
 
