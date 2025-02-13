@@ -45,11 +45,26 @@
 }
 
 
-@media all and (max-width: 600px) {
+/* @media all and (max-width: 600px) {
     .navContainer {
         flex-wrap: wrap;
     }
     .navContainer > li {
         flex: 1 1 50%;
+    }
+} */
+
+@media all and (max-width: 600px) {
+    .navContainer {
+        flex-wrap: wrap;
+        margin: 2px; 
+    }
+    .navContainer > li {
+        flex: 1 1 100%; 
+        text-align: right; 
+        padding: 10px 0; 
+    }
+    .navContainer a {
+        padding: 10px; 
     }
 }
