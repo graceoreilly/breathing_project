@@ -20,6 +20,8 @@
     margin-left: auto;
 }
 
+
+
 .navContainer {
     display: flex;
     text-align: right;
@@ -30,6 +32,16 @@
 .navContainer > li {
     padding-left: 20px;
     list-style-type: none;
+}
+
+.navContainer a {
+    text-decoration: none;
+    color: #fefae0;
+}
+
+.navContainer a.active {
+    font-weight: bold;
+    color: #bc6c25;
 }
 
 

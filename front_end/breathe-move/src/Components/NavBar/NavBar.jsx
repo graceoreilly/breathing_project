@@ -10,16 +10,29 @@ function NavBar() {
         <nav className={styles.navBar}>
             <ul className={styles.navContainer}>
                 <li className={styles.listItem}>
-                    <NavLink to="/" activeClassName="active">
+                <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
                     Home
                     </NavLink>
                     </li>
                 <li className={styles.listItem}>
-                <NavLink to="/breathwork" activeClassName="active">
+                <NavLink
+            to="/breathwork"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
                     Breathing Techniques
                     </NavLink>
                     </li>
-                <li className={styles.listItem}>Yoga Flow</li>
+                <li className={styles.listItem}>
+                <NavLink
+            to="/yoga"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+                    Yoga Flow
+                    </NavLink>
+                    </li>
             </ul>
         </nav>
         </div>

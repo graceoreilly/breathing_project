@@ -1,12 +1,12 @@
 import Footer from "../../Components/Footer/Footer";
 
-function BreathingPage() {
+function YogaPage () {
     return (
     <>
-    <h1>Breath Work</h1>
+    <h1>Yoga</h1>
     <Footer />
     </>
     )
 }
 
-export default BreathingPage;
+export default YogaPage;
