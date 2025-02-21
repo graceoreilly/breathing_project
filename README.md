@@ -1,4 +1,4 @@
-## Breathing Techniques API
+## Breathing and Wellness Project
 
 ### **Project Overview**
 Yoga and wellness has always been a passion of mine. I practice yoga and breathing techniques almost everyday and I wanted to build a project that merges my passion for technology with my passion for wellness.
