@@ -4,7 +4,7 @@
 Yoga and wellness has always been a passion of mine. I practice yoga and breathing techniques almost everyday and I wanted to build a project that merges my passion for technology with my passion for wellness.
 
 **Problem Statement:** Balancing well-being with intensive learning can be challenging, often leading to burnout and reduced productivity.
-**Solution: ** A simple, all-in-one wellness app integrating breathing exercises, yoga, gratitude practices, and inspirational content to support mental well-being and focus.
+**Solution:** A simple, all-in-one wellness app integrating breathing exercises, yoga, gratitude practices, and inspirational content to support mental well-being and focus.
 
 Firstly, a Breathing Techniques API was created, it is a RESTful API designed to promote wellness and mindfulness by providing users with information about various breathing techniques. Each technique in the dataset includes its description, contraindications, ideal practice times, and recommended poses.
 
