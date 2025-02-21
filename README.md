@@ -1,14 +1,18 @@
 ## Breathing Techniques API
 
 ### **Project Overview**
-The Breathing Techniques API is a RESTful API designed to promote wellness and mindfulness by providing users with information about various breathing techniques. Each technique in the dataset includes its description, contraindications, ideal practice times, and recommended poses. 
+Yoga and wellness has always been a passion of mine. I practice yoga and breathing techniques almost everyday and I wanted to build an application that merges my passion for technology with my passion for wellness.
 
-The API is particularly useful for:
+Firstly, a Breathing Techniques API was created, it is a RESTful API designed to promote wellness and mindfulness by providing users with information about various breathing techniques. Each technique in the dataset includes its description, contraindications, ideal practice times, and recommended poses.
+
+Then a dynamic frontend was created using React and Javascript.
+
+The aim of this website is for:
 - Managing stress and anxiety
 - Supporting accessibility for diverse users
 - Personalising breathing exercises based on individual needs or preferences
 
-In the future, the API will integrate with a frontend application, offering a more interactive and visual user experience.
+In the future, the API will integrate with the current frontend application, offering a more interactive and visual user experience.
 
 ---
 
@@ -58,6 +62,7 @@ JSON responses from this API should adhere to the JSend specification as laid ou
 1. **Frontend Integration**:
    - Integrate frontend and backend
    - Display visual guides for poses and techniques.
+   - Integrate the backend API with a database
 
 2. **Image Support**:
    - Include images for poses and techniques.
