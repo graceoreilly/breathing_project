@@ -56,7 +56,7 @@ JSON responses from this API should adhere to the JSend specification as laid ou
 
 ### **Future Goals**
 1. **Frontend Integration**:
-   - Build a user-friendly interface to interact with the API.
+   - Integrate frontend and backend
    - Display visual guides for poses and techniques.
 
 2. **Image Support**:
@@ -65,13 +65,14 @@ JSON responses from this API should adhere to the JSend specification as laid ou
 3. **Advanced Filtering**:
    - Add filters for specific use cases, like "best for study stress."
 
-4. **Personalized Recommendations**:
+4. **Personalised Recommendations**:
    - Incorporate user preferences to suggest the best techniques dynamically.
 
 ---
 
 ### **Technologies Used**
 - **Backend**: Node.js, Express.js, Javascript
+- **Frontend**: React, Javascript
 - **Version Control**: Git
 
 ---
