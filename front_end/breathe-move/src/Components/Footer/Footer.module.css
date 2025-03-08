@@ -8,9 +8,10 @@
     width: 100%;
     height: auto;
     bottom: 0;
-    position: relative;  /* absolute */
+    position: fixed;  /* absolute relative*/
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 .githubLogo {
