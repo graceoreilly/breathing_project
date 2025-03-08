@@ -8,7 +8,8 @@
     width: 100%;
     height: auto;
     bottom: 0;
-    position: fixed;  /* absolute relative*/
+    position: relative;
+    margin-top: auto; 
     left: 0;
     right: 0;
     z-index: 10;

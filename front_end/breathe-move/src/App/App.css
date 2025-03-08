@@ -30,6 +30,10 @@ footer p {
     margin: 0; /* Ensure no extra margin */
 }
 
+main {
+    flex: 1;
+}
+
 /* main {
     flex: 1;
     display: flex;
