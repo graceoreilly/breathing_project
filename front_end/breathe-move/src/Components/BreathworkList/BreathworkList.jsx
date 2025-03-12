@@ -1,32 +1,13 @@
-import { useEffect, useState } from "react";
-import { getAllBreathingTechniques } from "../../../services/apiService";
+/* eslint-disable react/prop-types */
+import BreathingCard from "../BreathingCard/BreathingCard"
+import styles from './BreathworkList.module.css'
 
-function BreathworkList() {
-    const [techniques, setTechniques] = useState({data: []});
-
-    useEffect(() => {
-        async function fetchTechniques() {
-            const response = await getAllBreathingTechniques();
-            setTechniques(response);
-        }
-        fetchTechniques();
-    }, []);
-
-    return (
-        <>
-        <h2>Breathing Techniques</h2>
-        <ul>
-            {techniques.data && techniques.data.map(technique => (
-                <li key={technique.id}>
-                    <h3>{technique.name}</h3>
-                    <p>{technique.description}</p>
-                </li>
-            ))}
-        </ul>
-        </>
-    )
+export default function BreathworkList( { breathingCards }) {
+  return (
+    <div className={styles.grid}>
+      {breathingCards.map(breathingCard => {
+        return <BreathingCard breathingCard={breathingCard} key={breathingCard.id} />
+      })}
+    </div>
+  )
 }
-
-
-
-export default BreathworkList;

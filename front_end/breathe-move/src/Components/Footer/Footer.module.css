@@ -4,8 +4,7 @@
     background-color: #283618;
     color: #fefae0;
     margin: 0;
-    align-items: flex-end;
-    width: 100%;
+    width: 100;
     height: auto;
     bottom: 0;
     position: relative;
@@ -13,6 +12,7 @@
     left: 0;
     right: 0;
     z-index: 10;
+    box-sizing: border-box;
 }
 
 .githubLogo {

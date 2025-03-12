@@ -5,7 +5,7 @@ function YogaPage () {
     return (
     <>
     <div className={styles.mainContainer}>
-    <h1>Yoga</h1>
+    <h1>Yoga Flow Coming Soon...</h1>
     <Footer />
     </div>
     </>
