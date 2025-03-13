@@ -9,7 +9,9 @@ const app = express(); //initialises an express application, the app variable ca
 // const PORT = 3000; //sets the port number
 
 app.use(cors({
-    origin: ['https://breathing-project-o2xg.vercel.app/', 'http://localhost:3000']
+    origin: ['https://breathing-project-o2xg-4c4xnms1h-graceoreillys-projects.vercel.app', 'http://localhost:3000'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
   }));
 
 
