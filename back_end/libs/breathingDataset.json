@@ -60,4 +60,31 @@
   "Best Pose" : "Lotus Pose (Padmasana)",
   "Feeling": "Tired",
   "id" : 7
+},
+{
+  "name" : "Ujjayi Pranayama (Victorious Breath)",
+  "description" : "Sit with a straight spine. Inhale and exhale through the nose while slightly constricting the back of the throat, creating a soft oceanic sound. Keep the breath smooth, deep, and controlled.",
+  "Contraindications" : "None significant, but those with glaucoma or ear pressure issues should practice gently.",
+  "Best for" : "Focusing the mind, building internal heat, and enhancing meditation practices.",
+  "Best Pose" : "Easy Pose (Sukhasana) or during asana practice",
+  "Feeling": "Anxious, Stressed, Tired",
+  "id" : 8
+},
+{
+  "name" : "Sitali Pranayama (Cooling Breath)",
+  "description" : "Sit comfortably. Roll your tongue into a tube shape (or slightly open your mouth if you can't roll your tongue). Inhale deeply through the rolled tongue or mouth. Close your mouth and exhale slowly through the nose. Repeat 5-10 times.",
+  "Contraindications" : "Avoid during cold weather or if you have a respiratory infection.",
+  "Best for" : "Cooling the body, reducing excess heat, and calming agitation.",
+  "Best Pose" : "Easy Pose (Sukhasana)",
+  "Feeling": "Stressed",
+  "id" : 9
+},
+{
+  "name" : "Dirga Pranayama (Three-Part Breath)",
+  "description" : "Begin by breathing naturally. Then inhale in three parts: first filling the lower abdomen, then the rib cage, and finally the upper chest. Exhale in the same order, emptying the upper chest, rib cage, and then lower abdomen. Keep the breath smooth and connected.",
+  "Contraindications" : "Generally safe for all practitioners.",
+  "Best for" : "Reducing anxiety, increasing awareness of the breath, and preparing for meditation.",
+  "Best Pose" : "Easy Pose (Sukhasana) or Lying Down (Savasana)",
+  "Feeling": "Anxious, Stressed",
+  "id" : 10
 }]
