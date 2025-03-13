@@ -1,0 +1,63 @@
+[{
+  "name" : "Nadi Shodhana Pranayama (Alternate Nostril Breathing)",
+  "description" : "Sit in a comfortable position. Close your right nostril with your thumb, inhale through your left nostril. Close your left nostril with your ring finger, release your thumb from the right nostril, and exhale through the right nostril. Inhale through the right nostril, close it, and exhale through the left. Continue this alternate pattern.",
+  "Contraindications" : "Avoid if you have severe nasal congestion or a respiratory condition that makes breathing difficult.",
+  "Best for" : "Calming the mind, balancing energy, reducing anxiety.",
+  "Best Pose" : "Easy Pose (Sukhasana)",
+  "Feeling": "Anxious, Stressed",
+  "id" : 1
+},
+{
+  "name" : "Chandrabhedana Pranayama (Left Nostril Breathing)",
+  "description" : "Sit comfortably. Close your right nostril with your thumb and inhale deeply through your left nostril. Close your left nostril and exhale through the right nostril. Repeat this cycle.",
+  "Contraindications" : "Avoid if you feel cold, lethargic, or are prone to sinus issues.",
+  "Best for" : "Cooling the body and calming the mind. Useful when feeling overheated or stressed.",
+  "Best Pose" : "Easy Pose (Sukhasana)",
+  "Feeling": "Anxious, Stressed",
+  "id" : 2
+},
+{
+  "name" : "Surya Bhedana Pranayama (Right Nostril Breathing)",
+  "description" : "Close your left nostril with your ring finger and inhale deeply through your right nostril. Close your right nostril and exhale through the left nostril. Repeat this pattern.",
+  "Contraindications" : "Avoid if you are feeling hot, anxious, or suffer from hypertension.",
+  "Best for" : "Energising the body and warming up. Ideal when feeling sluggish or cold.",
+  "Best Pose" : "Vajrasana (Thunderbolt Pose)",
+  "Feeling": "Tired",
+  "id" : 3
+},
+{
+  "name" : "Full Yogic Breath",
+  "description" : "Lie down or sit in a comfortable position. Inhale deeply, first filling the belly, then the rib cage, and finally the chest. Exhale in reverse order, releasing the chest, rib cage, and then the belly. Ensure the breath is smooth and even.",
+  "Contraindications" : "None, but those with severe respiratory issues should proceed gently.",
+  "Best for" : "Relaxation, stress relief, and increasing lung capacity.",
+  "Best Pose" : "Corpse Pose (Savasana) or Easy Pose (Sukhasana)",
+  "Feeling": "Anxious, Stressed, Tired",
+  "id" : 4
+},
+{
+  "name" : "Bhastrika Pranayama (Bellows Breath)",
+  "description" : "Sit in a comfortable position. Inhale deeply through the nose and exhale forcefully through the nose, keeping the breath rapid and rhythmic. Continue for 10-15 breaths and then take a deep inhale and slow exhale.",
+  "Contraindications" : "Avoid if you have high blood pressure, heart problems, or are pregnant.",
+  "Best for" : "Boosting energy, improving focus, and detoxifying the body.",
+  "Best Pose" : "Lotus Pose (Padmasana)",
+  "Feeling": "Tired",
+  "id" : 5
+},
+{
+  "name" : "Bhramari Pranayama (Bee Breath)",
+  "description" : "Sit in a quiet space. Inhale deeply, then exhale slowly while making a humming sound, like a bee. Focus on the vibration and sound.",
+  "Contraindications" : "None, but avoid in noisy environments for better effect.",
+  "Best for" : "Reducing stress, calming the mind, and improving concentration.",
+  "Best Pose" : "Easy Pose (Sukhasana) or Thunderbolt Pose (Vajrasana)",
+  "Feeling": "Anxious, Stressed, Tired",
+  "id" : 6
+},
+{
+  "name" : "Kapalbhati Pranayama (Skull Shining Breath)",
+  "description" : "Sit in a comfortable position. Take a deep breath in, then exhale forcefully through the nose while pulling the belly inward. Allow the inhale to be passive. Repeat this rapid exhalation for 20-30 rounds.",
+  "Contraindications" : "Avoid if you have respiratory issues, high blood pressure, or are pregnant.",
+  "Best for" : "Detoxifying the lungs, boosting energy, and improving digestion.",
+  "Best Pose" : "Lotus Pose (Padmasana)",
+  "Feeling": "Tired",
+  "id" : 7
+}]

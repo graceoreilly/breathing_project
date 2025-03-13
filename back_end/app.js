@@ -1,8 +1,17 @@
 import express from 'express'; //imports the express module from the express package
 import breathingRoutes from './routes/breathingRoutes.js'; // Imports breathing routes
+import cors from 'cors';
 
 const app = express(); //initialises an express application, the app variable can now be used to define routes and middleware for handling HTTP requests
-const PORT = 3000; //sets the port number
+
+//enable CORS for all routes
+// app.use(cors());
+// const PORT = 3000; //sets the port number
+
+app.use(cors({
+    origin: ['https://breathing-project-o2xg.vercel.app/', 'http://localhost:3000']
+  }));
+
 
 app.use(express.json()); // Middleware to parse JSON request bodies
 
