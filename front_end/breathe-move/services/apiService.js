@@ -1,4 +1,4 @@
-const API_URL = "https://test-api-eta-ten.vercel.app";
+const API_URL = "https://breathing-project-ftyl3dxu4-graceoreillys-projects.vercel.app";
 
 export async function getAllBreathingTechniques() {
   try {
