@@ -1,4 +1,4 @@
-const API_URL = "https://breathing-project-ftyl3dxu4-graceoreillys-projects.vercel.app";
+const API_URL = "http://localhost:3000";
 
 export async function getAllBreathingTechniques() {
   try {
