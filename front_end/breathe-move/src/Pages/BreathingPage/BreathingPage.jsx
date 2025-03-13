@@ -11,19 +11,38 @@ export default function BreathingPage() {
     useEffect(() => {
                 async function fetchTechniques() {
                     try {
-                    const res = await getAllBreathingTechniques();
-                    setTechniques(
-                    res.data.map((techniqueItem) => {
-                        return {
-                        id: techniqueItem.id,
-                        name: techniqueItem.name,
-                        description: techniqueItem.description,
+                        const data = await getAllBreathingTechniques();
+                        if (Array.isArray(data)) {
+                            setTechniques(
+                                data.map((techniqueItem) => {
+                                    return {
+                                        id: techniqueItem.id,
+                                        name: techniqueItem.name,
+                                        description: techniqueItem.description,
+                                    }
+                                })
+                            );
+                        } else {
+                            const techniquesArray = data.data || [];
+                            if (Array.isArray(techniquesArray)) {
+                                setTechniques(
+                                    techniquesArray.map((techniqueItem) => {
+                                        return {
+                                            id: techniqueItem.id,
+                                            name: techniqueItem.name,
+                                            description: techniqueItem.description,
+                                        }
+                                    })
+                                );
+                            } else {
+                                console.error("Unexpected data format:", data);
+                                setTechniques([]);
+                            }
                         }
-                    })
-                );
-            } catch (error) {
-                console.error("Error fetching breathing techniques:", error)
-            }
+                    } catch (error) {
+                        console.error("Error fetching breathing techniques:", error);
+                        setTechniques([]);
+                    }
                 }
                 fetchTechniques();
             }, []);
@@ -33,7 +52,11 @@ export default function BreathingPage() {
     <div className={styles.mainContainer} >
     <h1>Breathing Techniques</h1>
     {/* breathingCards state variable is passed as a prop to BreathworkList component */}
-    <BreathworkList breathingCards={techniques} />
+    {techniques.length > 0 ? (
+                    <BreathworkList breathingCards={techniques} />
+                ) : (
+                    <p>Loading breathing techniques...</p>
+                )}
     </div>
     <Footer />
     </>
