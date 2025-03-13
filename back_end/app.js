@@ -10,9 +10,7 @@ app.use(cors({
   credentials: true
 }));
 
-
 const PORT = 3000;
-
 
 app.use(express.json());
 
