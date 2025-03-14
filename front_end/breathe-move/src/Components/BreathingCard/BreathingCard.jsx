@@ -23,7 +23,6 @@ export default function BreathingCard({ breathingCard }) {
   })
 
   return (
-    // On click we want to set it to the opposite of flipped
     <div onClick={() => setFlipped(!flipped)}
      style={{height: height}}
       className={`${styles.card} ${flipped ? styles.flip : styles.flipped}`}
