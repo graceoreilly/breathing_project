@@ -1,53 +1,97 @@
-## Breathing and Wellness Project
+# Breathe and Move
 
-### **Project Overview**
+---
+
+Deployed site: [Breathe and Move 🧘‍♀️](https://breathing-project-o2xg.vercel.app/)
+
+## **Project Overview**
 Yoga and wellness has always been a passion of mine. I practice yoga and breathing techniques almost everyday and I wanted to build a project that merges my passion for technology with my passion for wellness.
 
-**Problem Statement:** Balancing well-being with intensive learning can be challenging, often leading to burnout and reduced productivity.
+---
 
-**Solution:** A simple, all-in-one wellness app integrating breathing exercises, yoga, gratitude practices, and inspirational content to support mental well-being and focus.
+### Problem Statement:
+Prolonged stress and high-pressure environments often lead to burnout and reduced productivity.
 
-Firstly, a Breathing Techniques API was created, it is a RESTful API designed to promote wellness and mindfulness by providing users with information about various breathing techniques. Each technique in the dataset includes its description, contraindications, ideal practice times, and recommended poses.
-
-Then a dynamic frontend was created using React and Javascript.
-
-The aim of this website is for:
-- Managing stress and anxiety
-- Supporting accessibility for diverse users
-- Personalising breathing exercises based on individual needs or preferences
-
-In the future, the API will integrate with the current frontend application, offering a more interactive and visual user experience.
-
+### Solution:
+A wellness app combining breathing exercises, yoga, gratitude, and inspiration to enhance focus and mental well-being.
 
 ---
 
-### **Features**
-- **Comprehensive Dataset**: Contains detailed information about various breathing techniques.
-  - **Description**: Explains the technique in simple terms.
-  - **Contraindications**: Lists scenarios or conditions where the technique may not be suitable.
-  - **Ideal Practice Times**: Suggests when the technique is most effective (e.g., high stress, low energy).
-  - **Recommended Poses**: Indicates the best pose to perform the technique (e.g., sitting, lying).
-
-- **Filtering and Search Functionality**: 
-  - Filter techniques based on pose suitability or ideal practice times.
-  - Search for techniques to suit specific needs, such as reducing stress or increasing energy.
-
-- **Random Technique Generator**: Allows users to discover a random breathing technique for immediate use.
+## Tech Stack
+- JavaScript
+- React
+- Node.js
+- Express
+- Vitest
 
 ---
 
-### **Use Cases**
-1. **For Individuals**:
-   - Quickly find a breathing technique to combat stress or improve focus.
-   - Tailor exercises based on physical limitations or preferences.
-
-2. **For Wellness Apps**:
-   - Integrate the API to provide users with breathing exercises suited to specific situations.
-   - Build custom features, such as daily breathing reminders or guided exercises.
+## Features
+- An inspirational random quote generator that integrates data from a third-party API
+- A form component that the user can enter what they are grateful for each day
+- A custom-designed REST API that manages data flow between frontend and database
+- A PostgreSQL database of breathing techniques accessible through REST API endpoints
+- Frontend deployed using Vercel and backend deployed using Render
 
 ---
 
-### **Endpoints**
+## Setup & Installation
+
+1️⃣ Clone this repo:
+
+```bash
+
+git clone git@github.com:graceoreilly/breathing_project.git
+cd breathing_project
+
+```
+
+2️⃣ Install dependencies:
+
+```bash
+
+npm install
+
+```
+
+3️⃣ Start the development server on the backend:
+
+```bash
+
+cd back_end
+npm run start
+
+```
+4️⃣ Start the development server on the frontend:
+
+```bash
+
+cd front_end
+npm run dev
+
+```
+5️⃣ Open in the browser:
+
+```bash
+
+http://localhost:3000
+
+```
+
+---
+
+## What I learned
+
+- How to build a REST API with CRUD operations using Node.js and Express
+- Using React Router to perform seemless navigation
+- Implementing testing using Vitest
+- Using an async await function and useEffect to fetch data from an API
+- Built a dynamic frontend using React and Javascript
+- How to manage state effciently using useState in React
+
+---
+
+### **API Endpoints**
 | Method | Endpoint                 | Description                                              | Status Code |
 |--------|--------------------------|----------------------------------------------------------|-------------|
 | GET    | `/techniques`            | Retrieves a list of all breathing techniques.            | 200         |
@@ -63,29 +107,13 @@ JSON responses from this API should adhere to the JSend specification as laid ou
 
 ---
 
-### **Future Goals**
-1. **Frontend Integration**:
-   - Integrate frontend and backend
-   - Display visual guides for poses and techniques.
-   - Integrate the backend API with a database
+## Future Improvements
 
-2. **Image Support**:
-   - Include images for poses and techniques.
-
-3. **Advanced Filtering**:
-   - Add filters for specific use cases, like "best for study stress."
-
-4. **Personalised Recommendations**:
-   - Incorporate user preferences to suggest the best techniques dynamically.
+- Integrating a POSTgreSQL database in deployed site
+- Increased testing using Vitest and playwright
+- Designing and implementing a yoga techniques API and postgreSQL database
 
 ---
 
-### **Technologies Used**
-- **Backend**: Node.js, Express.js, Javascript
-- **Frontend**: React, Javascript
-- **Version Control**: Git
-
----
-
-### **Contact**
-For questions, suggestions, or feedback, please contact graceoreilly111@gmail.com or open an issue in the repository.
+## 👤 About Me
+Created by Grace O'Reilly. For questions, suggestions, or feedback, please contact graceoreilly111@gmail.com or open an issue in the repository.
