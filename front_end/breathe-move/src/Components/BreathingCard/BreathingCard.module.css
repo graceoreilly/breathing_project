@@ -1,37 +1,52 @@
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: .25rem;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .3);
-    background-color: #606C38;
-    color: #fefae0;
-    transform-style: preserve-3d;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    transition: 1500ms;
-    box-sizing: border-box;
-    transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  background: linear-gradient(145deg, var(--sage-500), var(--sage-600));
+  color: var(--cream);
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 800ms var(--ease-soft), box-shadow var(--transition);
+  box-sizing: border-box;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  border: 1px solid rgba(254, 250, 224, 0.08);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
 }
 
 .card.flipped {
-    background-color: #283618;
+  background: linear-gradient(145deg, var(--sage-800), var(--sage-900));
 }
 
 .card.flip {
-    --rotate-y: 180deg;
+  --rotate-y: 180deg;
 }
 
 .card .front,
 .card .back {
-    position: absolute;
-    padding: 1rem;
-    backface-visibility: hidden;
+  position: absolute;
+  padding: 1.75rem;
+  backface-visibility: hidden;
+  font-family: "Tinos", serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
 
-.card .back  {
-    transform: rotateY(180deg);
+.card .front {
+  font-size: 1.3rem;
+  text-align: center;
 }
 
+.card .back {
+  transform: rotateY(180deg);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: rgba(254, 250, 224, 0.9);
+}

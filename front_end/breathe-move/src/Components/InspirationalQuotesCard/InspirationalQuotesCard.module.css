@@ -1,4 +1,22 @@
 .heading {
-    font-family: "Tinos", serif;
-    color: #FEFAE0;
+  font-family: "Tinos", serif;
+  color: var(--cream);
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.quotesCard p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--sand-100);
+  font-style: italic;
+}
+
+.quotesCard p p {
+  display: inline;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: var(--terracotta-soft);
+  margin-left: 0.4rem;
 }

@@ -1,37 +1,34 @@
 .container {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #283618;
-    color: #fefae0;
-    margin: 0;
-    width: 100;
-    height: auto;
-    bottom: 0;
-    position: relative;
-    margin-top: auto; 
-    left: 0;
-    right: 0;
-    z-index: 10;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: var(--sage-900);
+  color: var(--cream);
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.25rem 2rem;
+  box-sizing: border-box;
+  z-index: 10;
 }
 
 .githubLogo {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    cursor: pointer;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+  filter: brightness(1.1);
 }
 
 .githubLogo:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 .text {
-   color: #FEFAE0;
-   font-size: smaller;
-   padding-left: 20px;
-   padding: 10px;
+  color: rgba(254, 250, 224, 0.75);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  margin: 0;
 }
-

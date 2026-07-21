@@ -3,60 +3,104 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 20vh;
+  width: 100%;
 }
 
 .question {
-  font-size: 1.4rem;
-  color: #FEFAE0;
+  font-size: 1.35rem;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
 }
 
 .input {
   margin: 0.5rem 0;
-  padding: 0.5rem;
+  padding: 0.85rem 1rem;
   width: 100%;
-  max-width: 600px;
-  font-family: "Tinos", serif;
-  border: none;
+  max-width: 460px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border: 1px solid rgba(254, 250, 224, 0.2);
+  border-radius: var(--radius-md);
+  background: rgba(254, 250, 224, 0.08);
+  color: var(--cream);
+  transition: border-color var(--transition), background var(--transition);
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: rgba(254, 250, 224, 0.4);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--terracotta-soft);
+  background: rgba(254, 250, 224, 0.12);
 }
 
 .submit {
-  margin: 0.5rem 0;
-    background-color: #606C38;
-    color: #FEFAE0;
-    border: none;
-    padding: 0.3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    font-family: "Tinos", serif;
-    width: 100%;
-    max-width: 400px;
-    font-size: 1.1em;
+  margin: 1rem 0 0;
+  background-color: var(--terracotta);
+  color: var(--cream);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition),
+    background-color var(--transition);
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  max-width: 200px;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
 }
 
 .submit:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
+  box-shadow: var(--shadow-md);
+  background-color: var(--terracotta-soft);
+}
 
 .output {
-  font-size: 1.3rem;
-  margin-top: 1rem;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  padding: 0;
   list-style-type: none;
-  color: #FEFAE0;
+  color: var(--cream);
   text-align: left;
+  width: 100%;
+  max-width: 460px;
 }
+
+.output li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(254, 250, 224, 0.08);
+  opacity: 0.92;
+  animation: fadeIn 400ms var(--ease-soft) both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 0.92;
+    transform: translateX(0);
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .question {
-    font-size: 1em;
+    font-size: 1.15rem;
   }
 
   .submit {
-    font-size: 0.9em;
+    font-size: 0.95rem;
   }
 
   .output {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }

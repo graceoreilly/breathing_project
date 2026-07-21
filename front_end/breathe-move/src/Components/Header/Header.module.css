@@ -1,80 +1,106 @@
 .container {
-    background-image: url(../../Images/hero-image.jpg);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-height: 800px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex: 1;
-    width: 100%;
+  background-image: url(../../Images/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 620px;
+  max-height: 820px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 54, 24, 0.35) 0%,
+    rgba(40, 54, 24, 0.15) 40%,
+    rgba(40, 54, 24, 0.55) 100%
+  );
+  z-index: 1;
 }
 
 .heading {
-    color: #FEFAE0;
-    font-size: 100px;
-    padding: 15px;
-    opacity: 0.5;
+  position: relative;
+  z-index: 2;
+  color: var(--cream);
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  padding: 1rem;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 24px rgba(40, 54, 24, 0.35);
+  animation: fadeInUp 1200ms var(--ease-soft) both;
 }
 
 .buttonContainer {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: fadeInUp 1200ms 200ms var(--ease-soft) both;
 }
 
 .buttonContainer button {
-    margin-right: 10px;
-    background-color: #283618;
-    color: #FEFAE0;
-    border: none;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    font-family: "Tinos", serif;
-    width: 15em;
-    font-size: 1.1em;
+  background-color: rgba(254, 250, 224, 0.14);
+  color: var(--cream);
+  border: 1px solid rgba(254, 250, 224, 0.35);
+  padding: 0.85rem 2.2rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform var(--transition), background-color var(--transition),
+    box-shadow var(--transition), border-color var(--transition);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .buttonContainer button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    background-color: #606C38;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  background-color: rgba(254, 250, 224, 0.22);
+  border-color: rgba(254, 250, 224, 0.6);
 }
 
-@media only screen and (max-width: 400px) {
-    .buttonContainer button {
-        width: 80%;
-        font-size: 0.8em;
-    }
-    .heading {
-        font-size: 80px;
-        padding: 10px;
-    }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .buttonContainer {
-        width: 100%;
-        left: 0;
-    }
-    
-    .buttonContainer button {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-    
-    .heading {
-        font-size: 60px;
-        padding: 10px;
-    }
-    
-    .container {
-        min-height: 500px;
-    }
+  .container {
+    min-height: 520px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .buttonContainer button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .heading {
+    font-size: 2.6rem;
+  }
 }
